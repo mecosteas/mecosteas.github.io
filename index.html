@@ -10,10 +10,11 @@
     <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="layout-styles.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light mb-2">
+<body class="w-100">
+    <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" href="#">Roberto Herman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,98 +23,146 @@
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resumé</a>
+                    <a class="nav-link" href="assets/resume-portfolio.pdf">Resumé</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- ABOUT ME -->
-    <div class="container">
 
+    <div class="about-me-container">
         <!-- PROFILE PICTURE -->
-        <img data-src="./assets/Snow-Dogs-25 copy.jpg" alt="Roberto Herman"
-            class="w-50 mb-2 rounded-circle img-thumbnail mx-auto d-block" src="./assets/Snow-Dogs-25 copy.jpg">
-
+        <img id="profile-pic" alt="Roberto Herman profile picture" class="flex-item" src="./assets/profile-pic.jpg">
+        <!-- <img class="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                data-holder-rendered="true"> -->
         <!-- WHO AM I? -->
-        <p class="">
-            Hello I am a rising senior at San Francisco State University pursuing a Bachelor of Science degree in
-            Computer Science.
-        </p>
+        <div class="flex-item m-4">
+            <h1>About Me</h1>
+            <p>
+                I am a rising senior at San Francisco State University pursuing a Bachelor of Science degree
+                in Computer Science. I enjoy the fullstack process of creating web apps from scratch as much as I
+                enjoy spending time in nature. Check out some of the projects I've worked on, and if you're a recruiter
+                looking
+                for a motivated Software Engineer, please contact me. <b>I'm looking for a job!</b>
+            </p>
+        </div>
+
 
     </div>
 
     <!-- PROJECTS -->
+    <!-- Center the title and make this section a different background color than above -->
+    <h1 class="text-center">Projects</h1>
     <div class="container">
-        <h1>Projects</h1>
 
-        <!-- PHOTIFY -->
-        <div class="card mb-2">
-            <img src="./assets/photify.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Photify</h5>
-                <p class="card-text">A photo sharing web app where the user creates an account, logs in, and is
-                    able to upload pictures and comment on other user’s photos. Account information, image data, and
-                    comments are stored in an SQL database.</p>
-                <a href="https://photify-webapp.herokuapp.com/" class="btn btn-primary">It's running here!</a>
-                <a href="https://github.com/mecosteas/Photify" class="btn btn-secondary">GitHub</a>
+        <div class="card-deck m-5">
+            <div class="card-deck">
+                <!-- PHOTIFY -->
+                <div class="card mb-2">
+                    <img src="./assets/photify.png" class="card-img-top bg-dark" alt="Photify Screenshot" width="100%"
+                        height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">Photify</h5>
+                        <p class="card-text">A photo sharing web app where the user creates an account, logs in, and is
+                            able to upload pictures and comment on other user’s photos. Account information, image data,
+                            and
+                            comments are stored in an SQL database.</p>
+                        <p>
+                            <hr>
+                            JavaScript, Node.js, Express.js, MySql
+                            <hr>
+                        </p>
+                        <a href="https://photify-webapp.herokuapp.com/" class="btn btn-primary">It's running here!</a>
+                        <a href="https://github.com/mecosteas/Photify" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <!-- ALIEN INVASION -->
+                <div class="card mb-2">
+                    <iframe class="card-img-top" style="height: 13rem;" src="https://giphy.com/embed/l0XS5u3aSXLVq5YRDI"
+                        frameBorder="0" width="100%" height="50%" alt="Alien Invasion"></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Alien Invasion</h5>
+                        <p class="card-text">A game similar to Galaga (1981). The player controls a spaceship, shooting
+                            alien
+                            ships
+                            that come from the top and move down towards your ship, speeding up every level. Lives,
+                            current
+                            score,
+                            high score, and level are all displayed.</p>
+                        <p>
+                            <hr>
+                            Python, PyGame
+                            <hr>
+                        </p>
+                        <a href="youtu.be/8O2TZ5ukDS0" class="btn btn-primary">Watch the video!</a>
+                        <a href="https://github.com/mecosteas/Alien-Invasion" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- ALIEN INVASION -->
-        <div class="card mb-2">
-            <iframe class="card-img-top giphy-embed" style="height: 13rem;"
-                src="https://giphy.com/embed/l0XS5u3aSXLVq5YRDI" frameBorder="0" width="100%" height="100%"
-                alt="Alien Invasion"></iframe>
-            <div class="card-body">
-                <h5 class="card-title">Alien Invasion</h5>
-                <p class="card-text">A game similar to Galaga (1981). The player controls a spaceship, shooting alien
-                    ships
-                    that come from the top and move down towards your ship, speeding up every level. Lives, current
-                    score,
-                    high score, and level are all displayed.</p>
-                <a href="youtu.be/8O2TZ5ukDS0" class="btn btn-primary">Watch the video!</a>
-                <a href="https://github.com/mecosteas/Alien-Invasion" class="btn btn-secondary">GitHub</a>
-            </div>
-        </div>
-
-        <!-- A/B TESTING SERVERLESS WEB APP-->
-        <div class="card mb-2">
-            <img src="./assets/serverless.png" class="card-img-top" alt="Photify: view image and comment">
-            <div class="card-body">
-                <h5 class="card-title">A/B Testing Serverless Web App</h5>
-                <p class="card-text">The web app routes the client to one of two very similar web pages, Ying, or Yang.
-                    Depending on which page the client lands on, they’re assigned a group in the backend, and will be
-                    directed to that same page for the rest of the month (unless client deletes cookies or browses in
-                    private mode).</p>
-                <a href="https://cloudflare-intern-app-fs.rherman.workers.dev/" class="btn btn-primary">It's running
-                    here!</a>
-            </div>
-
-            <!-- GENERATING AND VISUALIZING DATA -->
-            <div class="card mb-2">
-                <img src="./assets/visual_data.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Generating and Visualizing Data</h5>
-                    <p class="card-text">A game similar to Galaga (1981). The player controls a spaceship, shooting
-                        alien
-                        ships
-                        that come from the top and move down towards your ship, speeding up every level. Lives, current
-                        score,
-                        high score, and level are all displayed.</p>
-                    <a href="bit.ly/GHproj1" class="btn btn-secondary">GitHub</a>
+            <div class="card-deck">
+                <!-- A/B TESTING SERVERLESS WEB APP-->
+                <div class="card mb-2">
+                    <div class="card-img-top">
+                        <img id="card-3" src="./assets/serverless.png" class="card-img-top"
+                            alt="Photify: view image and comment">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">A/B Testing Serverless Web App</h5>
+                        <p class="card-text">The web app routes the client to one of two very similar web pages, Ying,
+                            or
+                            Yang.
+                            Depending on which page the client lands on, they’re assigned a group in the backend, and
+                            will
+                            be
+                            directed to that same page for the rest of the month (unless client deletes cookies or
+                            browses
+                            in
+                            private mode).</p>
+                        <p>
+                            <hr>
+                            JavaScript, Node.js, Clouflare Workers API
+                            <hr>
+                        </p>
+                        <a href="https://cloudflare-intern-app-fs.rherman.workers.dev/" class="btn btn-primary">It's
+                            running
+                            here!</a>
+                    </div>
+                </div>
+                <!-- GENERATING AND VISUALIZING DATA -->
+                <div class="card mb-2">
+                    <div class="card-img-top">
+                        <img src="./assets/visual_data.png" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Generating and Visualizing Data</h5>
+                        <p class="card-text">A game similar to Galaga (1981). The player controls a spaceship, shooting
+                            alien
+                            ships
+                            that come from the top and move down towards your ship, speeding up every level. Lives,
+                            current
+                            score,
+                            high score, and level are all displayed.</p>
+                        <p>
+                            <hr>
+                            Python, PyPlot, PyGal, Pandas
+                            <hr>
+                        </p>
+                        <a href="https://github.com/mecosteas/Generating-and-Visualizing-Data"
+                            class="btn btn-secondary">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- TESTING STUFF -->
+
+    <!--  -->
 
 
 
 
-
+    <footer class="page-footer">Designed & Built by Roberto Herman</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
