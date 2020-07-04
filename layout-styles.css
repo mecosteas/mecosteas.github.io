@@ -33,6 +33,7 @@ hr {
   padding: 5rem;
   background-color: white;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .page-footer {
