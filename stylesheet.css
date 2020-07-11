@@ -13,11 +13,13 @@ hr {
   text-align: center;
   margin: 0px;
 }
+
 .navbar {
   background-color: rgb(65, 65, 65);
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 3px black;
   margin-bottom: 0px;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -41,6 +43,7 @@ hr {
   flex-direction: row;
   background-color: #0099ff;
   padding-top: 1rem;
+  padding-bottom: 0.7rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -71,6 +74,7 @@ h1 {
 }
 .card {
   box-shadow: -3px 3px 4px gray;
+  margin: 0px;
 }
 
 #card-3 {
@@ -88,8 +92,22 @@ h1 {
 
 #navbar-list {
   list-style-type: none;
+  /* display: inline; */
 }
 
 #wave {
   width: 100%;
+}
+
+.animate {
+  animation: slide-down 3s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-50rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
 }
