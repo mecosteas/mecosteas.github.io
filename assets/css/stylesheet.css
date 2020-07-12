@@ -1,3 +1,8 @@
+/* General Styling */
+ul {
+  list-style-type: none;
+}
+
 body {
   background-color: white;
 }
@@ -25,6 +30,10 @@ hr {
 .navbar-brand {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#navbar-list {
+  padding: 0;
 }
 
 .nav-link {
@@ -64,10 +73,6 @@ hr {
   max-width: 40em;
 }
 
-.page-footer {
-  text-align: center;
-}
-
 h1 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -88,11 +93,7 @@ h1 {
 .projects-container {
   margin-left: 0em;
   margin-right: 0em;
-}
-
-#navbar-list {
-  list-style-type: none;
-  /* display: inline; */
+  padding: 3em;
 }
 
 #wave {
@@ -109,5 +110,61 @@ h1 {
   }
   to {
     transform: translateY(0rem);
+  }
+}
+/*-------------
+ 	Footer
+-------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #414a4f;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 32px;
+  justify-content: center;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 8px;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+footer p a {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-container {
+    padding: 0;
   }
 }
