@@ -20,7 +20,7 @@ hr {
 }
 
 .navbar {
-  background-color: rgb(65, 65, 65);
+  /* background-color: rgb(65, 65, 65); */
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 3px black;
   margin-bottom: 0px;
