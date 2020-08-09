@@ -28,8 +28,14 @@ hr {
 }
 
 .navbar-brand {
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px !important;
+  padding: 0 !important;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#navbarSupportedContent {
+  padding: .5rem 1rem 0 0;
 }
 
 #navbar-list {
@@ -37,6 +43,9 @@ hr {
 }
 
 .nav-link {
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  padding: 0 .5rem 0 .5rem !important;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
 }
@@ -46,8 +55,8 @@ hr {
 }
 
 .about-me-flex-container {
-  font-size: large;
-  text-shadow: 1px 0px 0px black, 0 0 1px white;
+  /* font-size: large; */
+  /* text-shadow: 1px 0px 0px black, 0 0 1px white; */
   display: flex;
   flex-direction: row;
   background-color: #0099ff;
@@ -71,10 +80,19 @@ hr {
 
 #about-me-flex-item {
   max-width: 40em;
+  background-color: rgba(240, 248, 255, 0.192);
+  border-radius: 25px 0px 25px 0px;
+  padding: 1rem;
+}
+
+#about-me-description {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
 }
 
 h1 {
   color: white;
+  font-family: "Brush Script MT", cursive;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .card {
