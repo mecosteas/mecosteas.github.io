@@ -56,15 +56,9 @@ hr {
 }
 
 .about-me-flex-container {
-  /* font-size: large; */
-  /* text-shadow: 1px 0px 0px black, 0 0 1px white; */
-  /* display: flex;
-  flex-direction: row; */
   background-color: #0099ff;
   padding-top: 1rem;
   padding-bottom: 0.7rem;
-  /* flex-wrap: wrap;
-  justify-content: center; */
 }
 
 #profile-pic {
@@ -74,12 +68,6 @@ hr {
   box-shadow: 5px 5px 5px;
   flex: auto;
   margin-bottom: .5rem;
-}
-
-#profile-pic-flex-item {
-  /* flex-grow: 1; */
-  /* align-self: center;
-  justify-self: center; */
 }
 
 #about-me-flex-item {
